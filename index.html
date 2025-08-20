@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <style >
+        body {
+            background-color: #21252B; /* Màu nền giống VS Code/JetBrains */
+            color: #abb2bf; /* Màu chữ chính */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #282C34; /* Màu nền của "code block" */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #21252B;
+            border-right: 1px solid #3d424b;
+        }
+
+        .profile-image {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #61afef;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            border-top: 1px solid #3d424b;
+            padding-top: 15px;
+        }
+
+        h1, h2, h3 {
+            color: #61afef; /* Màu xanh của public string */
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            color: #c678dd; /* Màu tím của public enum và void */
+        }
+
+        h1 {
+            font-size: 1.5em;
+            color: #e5c07b; /* Màu vàng nhạt của tên class */
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .header-info p, .entry p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .header-info p:first-child {
+            color: #e5c07b;
+            font-weight: bold;
+        }
+
+        .header-info p:nth-child(2) {
+            color: #c678dd;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #56b6c2; /* Màu xanh ngọc */
+        }
+
+        .description {
+            white-space: pre-wrap;
+            font-style: italic;
+            color: #98c379; /* Màu xanh lá cây của comment */
+        }
+
+        .description::before {
+            content: "/* ";
+            color: #5c6370; /* Màu xám của comment */
+        }
+
+        .description::after {
+            content: " */";
+            color: #5c6370;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="profile-image">
+            <img src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/497681971_10232199514644649_1112628996881044667_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=tKSdeZ8MUV4Q7kNvwGSB7ZI&_nc_oc=Adkd7LrECB9Gezcx68kqQocPTiFMzLnLhiRnltGjyb1FTASUSqG0yZIVadQmhBfwVeQ&_nc_zt=23&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=A8aU-Fh771SlXqNi_HRjQg&oh=00_AfXgdI_LEqVmp9b1ndwNpixWqRdGVE4Xn0ABMxYGnb6d0A&oe=68ABC11E" alt="Profile Picture">
+        </div>
+        <div class="section">
+            <h3>SKILLS()</h3>
+        </div>
+        <div class="section">
+            <h3>LANGAGES()</h3>
+            <ul>
+                <li>Java, Kotlin, GO</li>
+                <li>Python, Bash, PHP</li>
+                <li>Javascript, Typescript, (Nodejs)</li>
+                <li>SQL, </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>FRAMEWORKS_AND_LIBRARIES()</h3>
+            <ul>
+                <li>Spring, Spring boot</li>
+                <li>Angular, Vue, React</li>
+                <li>Next, nestjs</li>
+                <li>ZK, Struts, Laravel</li>
+                <li>Oracle ADF</li>
+                <li>Jupyter Notebook,Pandas,Scikit-learn</li>
+                <li>Jasper report</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>TOOLS()</h3>
+            <ul>
+                <li>Docker, Kubernetes</li>
+                <li>Git, GitHub, Gitlab</li>
+                <li>Prometheus, Elastic search, Grafana</li>
+                <li>Sonarqube</li>
+                <li>Nginx</li>
+                <li>Airflow</li>
+                <li>RabbitMQ</li>
+                <li>K6, JMeeter</li>
+                <li>Cypress, Playwright, Robot-framework</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>DATABASE()</h3>
+            <ul>
+                <li>Mysql</li>
+                <li>PostgresSQL</li>
+                <li>Oracle</li>
+                <li>DB2</li>
+                <li>MSSQL</li>
+                <li>MONGODB</li>
+                <li>REDIS</li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="header-info">
+            <h1>Jirayu Photisan</h1>
+            <p>Software Engineer</p>
+            <p>gdunghi@gmail.com</p>
+            <p>085-4922469</p>
+        </div>
+
+        <div class="section">
+            <h2>About me</h2>
+            <div class="entry">
+                <h3>PROFILE()</h3>
+                <p style="margin-left: 10px;">&nbsp; An experienced engineer with over 14 Years in Software Development and 8+ years of Agile/Scrum Expertise Successfully contributed to Agile teams, fostering a culture of collaboration, innovation, and continuous improvement. Deep knowledge of front-end, back-end, and API development, leveraging technologies like Angular, Node.js, Python, Java</p>
+                <p style="margin-left: 10px;">&nbsp; Experienced in test-driven development, pair programming, and CI/CD pipelines to ensure high-quality, efficient software delivery. Committed to staying up-to-date with the latest technologies and trends, always seeking opportunities to expand my skill set.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>EXPERIENCES</h2>
+            <div class="entry">
+                <h3>Odd-e Thailand, Stock Exchange of Thailand ()</h3>
+                <p>Software Engineer: Dec 2016 - PRESENT</p>
+                <p class="description"><br>- Design and develop Fundconnext platform for Fund trading facilitate for trader can trading fund cross Asset Management
+                    <br>- Implemented a continuous integration/continuous deployment  (CI/CD) pipeline
+                    <br>- Developed a project for a client operating in the investment industry mainly working with Angular  and Nodejs. We are following Agile software development practices and test-driven development (TDD)
+                    <br>- Improve regression test with Automate testing by robot framework and cypress
+                    <br>- Performance Tuning
+                </p>
+            </div>
+            <div class="entry">
+                <h3>Apar Technologies (Thailand), Kasikorn bank ()</h3>
+                <p>Software Engineer: July 2016 - Nov  2016</p>
+                <p class="description"><br>- Developed Internal Fraud platform for detect fraud transaction and report
+                    <br>- Develop and improve performance of bash data processing
+                    <br>- ETL data transaction  for fraud analysis
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
